@@ -1,0 +1,73 @@
+
+ovide 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support the Cause</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 { color: #1a73e8; margin-bottom: 1rem; }
+        p { color: #5f6368; margin-bottom: 2rem; line-height: 1.5; }
+        .btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            width: 100%;
+        }
+        .btn:hover { background-color: #1557c0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Make an Impact</h1>
+    <p>Your contribution directly supports our current initiative. Click below to proceed with your donation.</p>
+    <button class="btn" id="donateButton">Donate Now</button>
+</div>
+
+<script>
+    document.getElementById('donateButton').addEventListener('click', function() {
+        // Insert your specific fundraising campaign link below
+        const baseCampaignUrl = "https://your-fundraising-platform.org/campaign";
+        
+        // This automatically attaches your name to the referral tracking
+        const referralName = "Suraj Eric Chowdhury";
+        
+        // Constructs the final URL with the referral parameter
+        const donationUrl = `${baseCampaignUrl}?referral=${encodeURIComponent(referralName)}`;
+        
+        // Redirects the user to the donation page
+        window.location.href = donationUrl;
+    });
+</script>
+
+</body>
+</html>
+
+
+
