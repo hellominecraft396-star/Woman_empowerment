@@ -1,73 +1,78 @@
-
-ovide 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support the Cause</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-        }
-        .container {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-        }
-        h1 { color: #1a73e8; margin-bottom: 1rem; }
-        p { color: #5f6368; margin-bottom: 2rem; line-height: 1.5; }
-        .btn {
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            width: 100%;
-        }
-        .btn:hover { background-color: #1557c0; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Women Empowerment</title>
 </head>
-<body>
+<body style="margin: 0; padding: 0; background-color: #f4f6f9;">
 
-<div class="container">
-    <h1>Make an Impact</h1>
-    <p>Your contribution directly supports our current initiative. Click below to proceed with your donation.</p>
-    <button class="btn" id="donateButton">Donate Now</button>
-</div>
+  <section id="donate-impact-section" style="max-width: 800px; margin: 40px auto; padding: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #ffffff; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08);">
 
-<script>
-    document.getElementById('donateButton').addEventListener('click', function() {
-        // Insert your specific fundraising campaign link below
-        const baseCampaignUrl = "https://your-fundraising-platform.org/campaign";
+    <div style="text-align: center; margin-bottom: 30px;">
+      <h2 style="color: #2c3e50; font-size: 28px; margin-bottom: 10px;">Support Women Empowerment</h2>
+      <p style="color: #666; font-size: 16px;">Your contribution directly funds education, vocational training, and essential supplies.</p>
+      
+      <a href="https://www.queensofchange.org/donate" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: linear-gradient(135deg, #e91e63, #ff4081); color: #ffffff; font-weight: bold; font-size: 18px; padding: 14px 32px; border-radius: 30px; text-decoration: none; box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3); transition: transform 0.2s, box-shadow 0.2s; margin-top: 15px;">
+        Donate Now
+      </a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+    <div style="margin-bottom: 40px;">
+      <h3 style="text-align: center; color: #333; margin-bottom: 20px;">How Your Donation Creates Impact</h3>
+      
+      <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; text-align: center;">
         
-        // This automatically attaches your name to the referral tracking
-        const referralName = "Suraj Eric Chowdhury";
-        
-        // Constructs the final URL with the referral parameter
-        const donationUrl = `${baseCampaignUrl}?referral=${encodeURIComponent(referralName)}`;
-        
-        // Redirects the user to the donation page
-        window.location.href = donationUrl;
-    });
-</script>
+        <div class="impact-card" style="flex: 1; min-width: 200px; background: #fff5f8; padding: 20px; border-radius: 10px; border: 1px solid #ffe0eb; transition: transform 0.3s ease;">
+          <div style="font-size: 40px; margin-bottom: 10px; animation: bounce 2s infinite;">📚</div>
+          <h4 style="margin: 5px 0; color: #d81b60;">Education</h4>
+          <p style="font-size: 14px; color: #555; margin: 0;">Provides learning kits, books, and tuition for young women.</p>
+        </div>
 
-</body>
-</html>
+        <div class="impact-card" style="flex: 1; min-width: 200px; background: #f0f7ff; padding: 20px; border-radius: 10px; border: 1px solid #d0e5ff; transition: transform 0.3s ease;">
+          <div style="font-size: 40px; margin-bottom: 10px; animation: pulse 2s infinite;">💻</div>
+          <h4 style="margin: 5px 0; color: #1976d2;">Skill Training</h4>
+          <p style="font-size: 14px; color: #555; margin: 0;">Funds digital literacy and vocational workshops.</p>
+        </div>
 
+        <div class="impact-card" style="flex: 1; min-width: 200px; background: #f3faf5; padding: 20px; border-radius: 10px; border: 1px solid #c8e6c9; transition: transform 0.3s ease;">
+          <div style="font-size: 40px; margin-bottom: 10px; animation: bounce 2s infinite 1s;">🩺</div>
+          <h4 style="margin: 5px 0; color: #388e3c;">Health & Hygiene</h4>
+          <p style="font-size: 14px; color: #555; margin: 0;">Supplies healthcare resources and hygiene products.</p>
+        </div>
 
+      </div>
+    </div>
 
+    <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+    <div>
+      <h3 style="text-align: center; color: #333; margin-bottom: 15px;">Recent Supporters</h3>
+      <ul id="donor-list" style="list-style: none; padding: 0; margin: 0 auto; max-width: 500px; background: #fafafa; border-radius: 8px; border: 1px solid #eee; overflow: hidden;">
+        <li style="padding: 15px; text-align: center; color: #888;">Loading supporters...</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <style>
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    .impact-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+
+  <script>
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxi5C8c83As0CHpWGAONEatyj7a0BjeN8O8Wxf1byWqgAY7oWHj6Gl-F9iz7nORMSdk/exec';
+
+    async function fetchDonors() {
+      const listElement = document.getE
